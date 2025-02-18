@@ -50,5 +50,5 @@ Retrieval Augmented Generation (RAG) is a language model (LM) that uses an exter
   |<a href="#Retrieval-Augmented-Generation-RAG">4</a>|4/16|RAG|<ul><li>How to retrieve</li><li>When to retrieve</li><li>What to retrieve</li><li>How to use retrieve</li></ul>|[RAG](https://colab.research.google.com/drive/1s1nlPUIG0fGK4VSHRH8pR3JiEpsZRfFO?usp=sharing)||
 
 ## Contact us
-Sing-Yuan Yeh: d10948003@ntu.edu.tw
+Sing-Yuan Yeh: d10948003@ntu.edu.tw  
 Jhe-Jia Wu: d11948002@ntu.edu.tw
