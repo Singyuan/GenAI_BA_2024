@@ -28,8 +28,8 @@ Retrieval Augmented Generation (RAG) is a language model (LM) that uses an exter
 |4|3/12|Dr. Wu (SYSTEX)||
 |5|3/19|SYSTEX||
 |6|3/26|SYSTEX||
-|7|4/2|SYSTEX|?|
-|8|4/9|SYSTEX||
+|7|4/2|SYSTEX||
+|8|4/9|SYSTEX|*|
 |9|4/16|Dr. Wu (SYSTEX)||
 |10|4/23|Proposal|x|
 |11|4/30|Prof. Yang (NTU)||
@@ -38,7 +38,7 @@ Retrieval Augmented Generation (RAG) is a language model (LM) that uses an exter
 |14|5/21|Catch up|?|
 |15|5/28|Presentation|x|
 
-
+\* The TA will be in the office. If you have any questions, feel free to come to the office and ask us.
 
 ## Contents
 |#|Date|Topic|Contents|Hands-on|Note|
@@ -46,7 +46,7 @@ Retrieval Augmented Generation (RAG) is a language model (LM) that uses an exter
 |<a href="#Preliminary">0</a>|3/12|Preliminary|<ul><li>Intro 2 Pytorch</li><li>Intro 2 DL</li><li>DL model</li></ul>|[DL model](https://colab.research.google.com/drive/1Ai5rEIYcpqYiLgdNIkdmsc47QWLvcpbt#scrollTo=V57zhcTp1Xxb)||
 |<a href="#small-Language-Models">1</a>|3/19|sLM|<ul><li>Transformer</li><li>BERT</li><li>Tokenization</li></ul>|[Transformer](https://colab.research.google.com/drive/1YUqcXCoP9RAaykSIz3IC2Bz3j6OTSawF?usp=sharing)||
 |<a href="#Large-Language-Models-LLMs">2</a>|3/26|LLMs|<ul><li>Training steps of LLMs</li><li>Evolution of LLMs</li><li>Quantization</li></ul>|<ul><li>[Call by API](https://colab.research.google.com/drive/1wwZp7Y3jZQMawKd523CJCd-u0VFIMGs0?hl=zh-tw#scrollTo=z4I00KtDfDs3)</li><li>[Quantization]()</li><ul>||
-|<a href="#Improve-PLMs-Fine-tuning">3</a>||Improve PLMs|<ul><li>Introduction to different FT ways</li><li>Comparison to different FT ways</li></ul>|[Fine-tuning]()||
+|<a href="#Improve-PLMs-Fine-tuning">3</a>|4/2|Improve PLMs|<ul><li>Introduction to different FT ways</li><li>Comparison to different FT ways</li></ul>|[Fine-tuning]()||
   |<a href="#Retrieval-Augmented-Generation-RAG">4</a>|4/16|RAG|<ul><li>How to retrieve</li><li>When to retrieve</li><li>What to retrieve</li><li>How to use retrieve</li></ul>|[RAG](https://colab.research.google.com/drive/1s1nlPUIG0fGK4VSHRH8pR3JiEpsZRfFO?usp=sharing)||
 
 ## Contact us
@@ -76,6 +76,7 @@ Jhe-Jia Wu: d11948002@ntu.edu.tw
 - **Initial Value (Weight Initialization)**: The process of setting the initial values for the weights of the neural network before training begins.
 
 ## small-Language-Models
+
 ### Tokenization 
 - **WordPiece**: Tokenizes words into subword units based on likelihood. Used by: BERT and related models.
 - **Byte Pair Encoding (BPE)**: Tokenizes text into subwords by iteratively merging the most frequent pair of bytes. Used by: GPT-2, Transformer models. Please refer to [BPE](https://platform.openai.com/tokenizer).
@@ -87,7 +88,7 @@ The third character is Bertolt, whose name contains "BERT". Hence, the word "BER
 ![DALLE2025-02-0612.13.11-Asequenceoffourfictionalcreaturesarrangedfromlefttorightincreasinginsizeexponentially.Thefirstcreatureontheleftisamechanicalr-ezgif.com-optipng-min](https://hackmd.io/_uploads/rk8MGlGKke.png)
 > Created by ChatGPT
 
-xfomer family
+xxxfomer family
 - [Transformer](https://proceedings.neurips.cc/paper_files/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf): Google 2017.
 - [GPT (Generative Pre-trained Transformer)](https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf) OpenAI 2018/6.
 - [BERT (Bidirectional Encoder Representations from Transformers)](https://arxiv.org/abs/1810.04805): OpenAI 2018/10.
