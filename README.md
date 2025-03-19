@@ -46,7 +46,7 @@ Retrieval Augmented Generation (RAG) is a language model (LM) that uses an exter
 |<a href="#Preliminary">0</a>|3/12|Preliminary|<ul><li>Intro 2 Pytorch</li><li>Intro 2 DL</li><li>DL model</li></ul>|<ul><li>[Training process](https://colab.research.google.com/drive/1QX-WMvQIsZAaRPWCaaFZquKj0OrUaclY?usp=sharing)</li><li>[DL model](https://colab.research.google.com/drive/1Ai5rEIYcpqYiLgdNIkdmsc47QWLvcpbt#scrollTo=V57zhcTp1Xxb)</li></ul>|
 |<a href="#small-Language-Models">1</a>|3/19|sLMs|<ul><li>Transformer</li><li>BERT</li><li>Tokenization</li></ul>|[Transformer](https://colab.research.google.com/drive/1YUqcXCoP9RAaykSIz3IC2Bz3j6OTSawF?usp=sharing)||
 |<a href="#Large-Language-Models-LLMs">2</a>|3/26|LLMs|<ul><li>Training steps of LLMs</li><li>Evolution of LLMs</li><li>Quantization</li></ul>|<ul><li>[Call by API](https://colab.research.google.com/drive/1wwZp7Y3jZQMawKd523CJCd-u0VFIMGs0?hl=zh-tw#scrollTo=z4I00KtDfDs3)</li><li>[Quantization](https://colab.research.google.com/drive/1bYs4uz6vE0Amx1-4d3wMsFfd_-Ci82LQ?usp=sharing)</li><ul>||
-|<a href="#Improve-PLMs-Fine-tuning">3</a>|4/2|Improve PLMs|<ul><li>Introduction to different FT ways</li><li>Comparison to different FT ways</li></ul>|[Fine-tuning]()||
+|<a href="#Improve-PLMs">3</a>|4/2|Improve PLMs|<ul><li>Introduction to different FT ways</li><li>Comparison to different FT ways</li></ul>|[Fine-tuning]()||
   |<a href="#Retrieval-Augmented-Generation-RAG">4</a>|4/16|RAG|<ul><li>How to retrieve</li><li>When to retrieve</li><li>What to retrieve</li><li>How to use retrieve</li></ul>|[RAG](https://colab.research.google.com/drive/1s1nlPUIG0fGK4VSHRH8pR3JiEpsZRfFO?usp=sharing)||
 
 ## Contact us
@@ -151,3 +151,7 @@ xxxfomer family
 - `NF4`
 
 Please refer to [mlabonne blog](https://mlabonne.github.io/blog/posts/Introduction_to_Weight_Quantization.html), [HF](https://huggingface.co/blog/hf-bitsandbytes-integration) or [bnb](https://huggingface.co/docs/bitsandbytes/index) for more details.
+
+
+## Improve PLMs
+  ![FT](https://hackmd.io/_uploads/SkHxYeftyx.png)
