@@ -74,6 +74,7 @@ Jhe-Jia Wu: d11948002@ntu.edu.tw
 - **Epoch**: One full pass through the entire training dataset during the training process.
 - **Batch Size**: The number of training samples used in one forward and backward pass through the network before updating the weights.
 - **Initial Value (Weight Initialization)**: The process of setting the initial values for the weights of the neural network before training begins.
+![training](https://hackmd.io/_uploads/BkWLuMNhye.png)
 
 ## small-Language-Models
 
@@ -100,6 +101,45 @@ xxxfomer family
 
 
 ## Large-Language-Models-LLMs
+![1-cbfa24f7 (1)](https://hackmd.io/_uploads/SkT_G51K1g.png)
+> Created by ChatGPT
+
+### Training steps of LLM
+  ![3step](https://hackmd.io/_uploads/B1-uSgMtyx.png)
+
+  - [Step 1](https://drive.google.com/file/d/1myvHjoeFOpIl1uGU9H1t4OpDErkhF0zO/view): [Pre-trained method](https://arxiv.org/abs/1810.04805) e.g. Masked languege modeling, Next sentence prediction. 
+  - [Step 2](https://drive.google.com/file/d/1SOXBQhsC_L6aHXcLx2rltaDdcO6N2FmJ/view): Fine-tuning (next section)
+  - [Step 3](https://speech.ee.ntu.edu.tw/~hylee/genai/2024-spring-course-data/0412/0412_LLMtraining_part3.pdf): real-world or RL practice
+
+### Three types of Pre-Training model (PLM)
+ Please refer to the [Survey paper](https://arxiv.org/abs/2402.06196) for more details.
+
+  |type|Example |
+  |-|-|
+  |Encoder|[BERT](https://arxiv.org/abs/1810.04805)|
+  |Decoder|<ul><li>[GPT-3 (Generative Pre-trained Transformer)](https://papers.nips.cc/paper/2020/hash/1457c0d6bfcb4967418bfb8ac142f64a-Abstract.html)</li><li>[LLaMA1 (Large Language Model Meta AI)](https://arxiv.org/abs/2302.13971)</li><li>[Mistral](https://arxiv.org/abs/2310.06825)</li></ul> |
+  |Encoder-decoder|<ul><li>[Transformer](https://proceedings.neurips.cc/paper_files/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf)</li> <li>[T5 (Text to Text Transfer Transformer)](https://arxiv.org/abs/1910.10683)</li></ul>|
+
+
+### Evolution
+
+|Stage|Time|Model |Publisher|Constribution|# of parms|
+  |-|-|-|-|-|-|
+  |1|2017/6|[Transformer](https://proceedings.neurips.cc/paper_files/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf)|Google|Originator||
+  |1|2018/6|GPT|OpenAI||117M|
+  |1|2018/10|[BERT](https://arxiv.org/abs/1810.04805)|Google|Pre-trained methods|340M|
+  |1|2019/2|GPT-2|OpenAI||1.5B|
+  |2|2019/10|[T5](https://arxiv.org/abs/1910.10683)|Google||11B|
+  |2|2020/5|[GPT-3](https://papers.nips.cc/paper/2020/hash/1457c0d6bfcb4967418bfb8ac142f64a-Abstract.html)|OpenAI|Prompt learning|175B|
+  |3|2022/4|[PaLM](https://arxiv.org/abs/2204.02311)|Google|[Chain-of-Thought](https://arxiv.org/abs/2201.11903)|540B|
+  |3|2022/12|ChatGPT|OpenAI|Based on gpt-3|
+  |3|2023/2|[LLaMA](https://arxiv.org/abs/2302.13971)|Meta||7B to 65B|
+  |4|2023/7|LLaMA2|Meta|Open source|7B to 70B|
+  |4|2023/12|Gemini|Google||
+  |4|2024/2|Sora|OpenAI|Multimodal models|
+  |4|2025/1|DeepSeek-R1|DeepSeek||1.5B to 671B|
+  |4|2025/2|Grok3|X||
+
 ### Quantization
 - `FP32`
 - `BF16`
