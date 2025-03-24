@@ -46,7 +46,7 @@ Retrieval Augmented Generation (RAG) is a language model (LM) that uses an exter
 |<a href="#Preliminary">0</a>|3/12|Preliminary|<ul><li>Intro 2 Pytorch</li><li>Intro 2 DL</li><li>DL model</li></ul>|<ul><li>[Training process](https://colab.research.google.com/drive/1QX-WMvQIsZAaRPWCaaFZquKj0OrUaclY?usp=sharing)</li><li>[DL model](https://colab.research.google.com/drive/1Ai5rEIYcpqYiLgdNIkdmsc47QWLvcpbt#scrollTo=V57zhcTp1Xxb)</li></ul>|
 |<a href="#small-Language-Models">1</a>|3/19|sLMs|<ul><li>Transformer</li><li>BERT</li><li>Tokenization</li></ul>|[Transformer](https://colab.research.google.com/drive/1YUqcXCoP9RAaykSIz3IC2Bz3j6OTSawF?usp=sharing)||
 |<a href="#Large-Language-Models-LLMs">2</a>|3/26|LLMs|<ul><li>Training steps of LLMs</li><li>Evolution of LLMs</li><li>Quantization</li></ul>|<ul><li>[Call by API](https://colab.research.google.com/drive/1wwZp7Y3jZQMawKd523CJCd-u0VFIMGs0?hl=zh-tw#scrollTo=z4I00KtDfDs3)</li><li>[Quantization](https://colab.research.google.com/drive/1bYs4uz6vE0Amx1-4d3wMsFfd_-Ci82LQ?usp=sharing)</li><ul>||
-|<a href="#Improve-PLMs">3</a>|4/2|Improve PLMs|<ul><li>Introduction to different FT ways</li><li>Comparison to different FT ways</li></ul>|[Fine-tuning]()||
+|<a href="#Improve-PLMs">3</a>|4/2|Improve PLMs|<ul><li>Introduction to different FT ways</li><li>Comparison to different FT ways</li></ul>|[Fine-tuning](https://colab.research.google.com/drive/1vQbcYXRVrZz_NGuaxr3bxQ9wFDaBfVBC?usp=sharing)||
   |<a href="#Retrieval-Augmented-Generation-RAG">4</a>|4/16|RAG|<ul><li>How to retrieve</li><li>When to retrieve</li><li>What to retrieve</li><li>How to use retrieve</li></ul>|[RAG](https://colab.research.google.com/drive/1s1nlPUIG0fGK4VSHRH8pR3JiEpsZRfFO?usp=sharing)||
 
 ## Contact us
@@ -155,3 +155,22 @@ Please refer to [mlabonne blog](https://mlabonne.github.io/blog/posts/Introducti
 
 ## Improve PLMs
   ![FT](https://hackmd.io/_uploads/SkHxYeftyx.png)
+
+Because meta has released a pretrained large language model LLaMA, everyone only needs to use fine-tuning to create our own model. That's why Prof. Lee said, "舊時王謝堂前llama 飛入尋常百姓家." 
+  ![截圖 2025-02-05 凌晨2.41.41](https://hackmd.io/_uploads/r1rtk1lFyg.png)
+  > [Image source](https://arxiv.org/abs/2303.18223)
+
+  Here are some examples of current Traditional Chinese models in Taiwan, along with the models they were fine-tuned on.
+  |#|Step 1|Step 2|
+|-|-|-|
+|0|LLaMA|[Taide (NCHC)](https://taide.tw/index)|
+|1|Mistral|[Breeze (MTK Research)](https://www.mediatek.tw/blog/mediatek-research-breeze-7b)|
+
+
+#### Supervised Fine-Tuning with LoRA
+  Supervised Fine-Tuning (SFT) adapts pre-trained models to specific tasks using labeled data, improving performance by adjusting the entire model. LoRA is an efficient fine-tuning approach within SFT that reduces computational and storage costs by introducing low-rank matrices. [Paper](https://arxiv.org/abs/2106.09685)
+
+#### Fine-tuning v.s RAG:
+
+  ![截圖 2025-02-05 下午1.46.06](https://hackmd.io/_uploads/SkTshdeK1g.png)
+  > [Image source](https://arxiv.org/abs/2312.10997)
