@@ -13,7 +13,7 @@ Put your knowledge into action by solving the problem through practical executio
 
 ### Roadmap
 Retrieval Augmented Generation (RAG) is a language model (LM) that uses an external datastore at test time.
-![arch](https://hackmd.io/_uploads/rk3wpvzYJx.png)
+![arch2](https://hackmd.io/_uploads/HkHJ1D_TJl.png)
 
 **The master of RAG roadmap**
 ![rag_class2](https://hackmd.io/_uploads/r1GmPHu6yx.png)
@@ -171,7 +171,7 @@ Because meta has released a pretrained large language model LLaMA, everyone only
   Supervised Fine-Tuning (SFT) adapts pre-trained models to specific tasks using labeled data, improving performance by adjusting the entire model. LoRA is an efficient fine-tuning approach within SFT that reduces computational and storage costs by introducing low-rank matrices. [Paper](https://arxiv.org/abs/2106.09685)
 
 ## Retrieval-Augmented-Generation-RAG
-![rag_class](https://hackmd.io/_uploads/HJHGwcet1l.png)
+![rag_class3](https://hackmd.io/_uploads/HycaAIdp1x.png)
 1. Splitter: Splits text into smaller chunks for easier processing. [LangChain Document](https://python.langchain.com/docs/concepts/text_splitters/)
 2. Embedding: Converts text into numerical vectors that capture meaning. [LangChain Document](https://python.langchain.com/docs/concepts/embedding_models/)
 3. Storage: Stores and organizes vector data for efficient retrieval. [LangChain Document](https://python.langchain.com/docs/concepts/vectorstores/)
