@@ -16,7 +16,7 @@ Retrieval Augmented Generation (RAG) is a language model (LM) that uses an exter
 ![arch](https://hackmd.io/_uploads/rk3wpvzYJx.png)
 
 **The master of RAG roadmap**
-![roadmap](https://hackmd.io/_uploads/rJtFnJGFJg.png)
+![rag_class2](https://hackmd.io/_uploads/r1GmPHu6yx.png)
 
 ## Calendar
 
@@ -47,7 +47,7 @@ Retrieval Augmented Generation (RAG) is a language model (LM) that uses an exter
 |<a href="#small-Language-Models">1</a>|3/19|sLMs|<ul><li>Transformer</li><li>BERT</li><li>Tokenization</li></ul>|[Transformer](https://colab.research.google.com/drive/1YUqcXCoP9RAaykSIz3IC2Bz3j6OTSawF?usp=sharing)||
 |<a href="#Large-Language-Models-LLMs">2</a>|3/26|LLMs|<ul><li>Training steps of LLMs</li><li>Evolution of LLMs</li><li>Quantization</li></ul>|<ul><li>[Call by API](https://colab.research.google.com/drive/1wwZp7Y3jZQMawKd523CJCd-u0VFIMGs0?hl=zh-tw#scrollTo=z4I00KtDfDs3)</li><li>[Quantization](https://colab.research.google.com/drive/1bYs4uz6vE0Amx1-4d3wMsFfd_-Ci82LQ?usp=sharing)</li><ul>||
 |<a href="#Improve-PLMs">3</a>|4/2|Improve PLMs|<ul><li>Introduction to different FT ways</li><li>Comparison to different FT ways</li></ul>|[Fine-tuning](https://colab.research.google.com/drive/1vQbcYXRVrZz_NGuaxr3bxQ9wFDaBfVBC?usp=sharing)||
-  |<a href="#Retrieval-Augmented-Generation-RAG">4</a>|4/16|RAG|<ul><li>How to retrieve</li><li>When to retrieve</li><li>What to retrieve</li><li>How to use retrieve</li></ul>|[RAG](https://colab.research.google.com/drive/1s1nlPUIG0fGK4VSHRH8pR3JiEpsZRfFO?usp=sharing)||
+  |<a href="#Retrieval-Augmented-Generation-RAG">4</a>|4/16|RAG|<ul><li>How to retrieve</li><li>When to retrieve</li><li>What to retrieve</li><li>How to use retrieve</li></ul>|[RAG](https://colab.research.google.com/drive/12kBCiWkCnfDcOHHrJX0BMx7hhthknvQw?usp=sharing)||
 
 ## Contact us
 Sing-Yuan Yeh: d10948003@ntu.edu.tw  
@@ -170,7 +170,41 @@ Because meta has released a pretrained large language model LLaMA, everyone only
 #### Supervised Fine-Tuning with LoRA
   Supervised Fine-Tuning (SFT) adapts pre-trained models to specific tasks using labeled data, improving performance by adjusting the entire model. LoRA is an efficient fine-tuning approach within SFT that reduces computational and storage costs by introducing low-rank matrices. [Paper](https://arxiv.org/abs/2106.09685)
 
-#### Fine-tuning v.s RAG:
+## Retrieval-Augmented-Generation-RAG
+![rag_class](https://hackmd.io/_uploads/HJHGwcet1l.png)
+1. Splitter: Splits text into smaller chunks for easier processing. [LangChain Document](https://python.langchain.com/docs/concepts/text_splitters/)
+2. Embedding: Converts text into numerical vectors that capture meaning. [LangChain Document](https://python.langchain.com/docs/concepts/embedding_models/)
+3. Storage: Stores and organizes vector data for efficient retrieval. [LangChain Document](https://python.langchain.com/docs/concepts/vectorstores/)
+4. Retriver: Retrieves relevant data or documents based on queries. [LangChain Document](https://python.langchain.com/docs/concepts/retrievers/)
+
+- Flow chart image from `LangChain` [Document](https://js.langchain.com/v0.1/docs/modules/chains/document/stuff/).
+![](https://js.langchain.com/v0.1/assets/images/stuff-818da4c66ee17911bc8861c089316579.jpg)
+
+- **Storage**
+  - vector databases
+  - [graph database](https://arxiv.org/abs/2408.08921)
+  
+- **Retriever (How to retrieve?)**
+  - Sparse retrieval: TF-IDF, BM25
+  - Dense retrieval: [DPR](https://arxiv.org/abs/2004.04906), Contriever
+
+- **What to retrieve? How to use retrieve? When to retrieve?**
+  
+| Model | What do retrieve? | How to use retrieval? | When to retrieve? |
+|-----------------------------|---------------------|-------------------|-----------------|
+| [RAG](https://arxiv.org/abs/2005.11401) (Lewis et al 2020) | Text chunks | Input layer | Once |
+| Retrieve-in-context LM (Shi et al 2023, Ram et al 2023) | Text chunks | Input layer | Every n tokens |
+| RETRO (Borgeaud et al. 2021) | Text chunks | Intermediate layers | Every n tokens |
+| kNN-LM (Khandelwal et al. 2020) | Tokens | Output layer | Every token |
+| FLARE (Jiang et al. 2023) | Text chunks | Input layer | Every n tokens *(adaptive)* |
+
+
+### Summary: Fine-tuning v.s RAG:
 
   ![截圖 2025-02-05 下午1.46.06](https://hackmd.io/_uploads/SkTshdeK1g.png)
   > [Image source](https://arxiv.org/abs/2312.10997)
+
+
+## References
+  - [CMU](https://www.phontron.com/class/anlp2024/assets/slides/anlp-10-rag.pdf)
+  - [ACL](https://acl2023-retrieval-lm.github.io/slides/3-architecture.pdf)
