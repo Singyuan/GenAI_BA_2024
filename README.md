@@ -177,8 +177,9 @@ Because meta has released a pretrained large language model LLaMA, everyone only
 3. Storage: Stores and organizes vector data for efficient retrieval. [LangChain Document](https://python.langchain.com/docs/concepts/vectorstores/)
 4. Retriver: Retrieves relevant data or documents based on queries. [LangChain Document](https://python.langchain.com/docs/concepts/retrievers/)
 
-- Flow chart image from `LangChain` [Document](https://js.langchain.com/v0.1/docs/modules/chains/document/stuff/).
+- Flow chart image.
 ![](https://js.langchain.com/v0.1/assets/images/stuff-818da4c66ee17911bc8861c089316579.jpg)
+ > [Image from `LangChain` [Document]](https://js.langchain.com/v0.1/docs/modules/chains/document/stuff/)
 
 - **Storage**
   - vector databases
