@@ -170,6 +170,15 @@ Because meta has released a pretrained large language model LLaMA, everyone only
 |1|Mistral|[Breeze (MTK Research)](https://www.mediatek.tw/blog/mediatek-research-breeze-7b)|
 
 
+#### LLMs Fine-Tuning Strategies
+- **Full Fine-Tuning**: Adjusts all model parameters for a specific task, but requires significant computational resources.
+- **Low-Rank Adaptation (LoRA)**: Adds low-rank matrices to the model and fine-tunes only a small subset of parameters, reducing computational cost.
+- **Prefix Tuning**: Adds a learnable prefix to the input, fine-tuning only this prefix while keeping the rest of the model fixed.
+- **Adapter Modules**: Inserts small trainable layers within the model, allowing task-specific learning without modifying the entire model.
+- **Regularization Techniques (e.g., Elastic Weight Consolidation, EWC)**: Prevents catastrophic forgetting by penalizing large weight changes when adapting to new tasks.
+- **Parameter-Efficient Fine-Tuning (PEFT)**: Focuses on optimizing a small number of parameters, enabling efficient task adaptation without full model updates.
+
+
 #### Supervised Fine-Tuning with LoRA
   Supervised Fine-Tuning (SFT) adapts pre-trained models to specific tasks using labeled data, improving performance by adjusting the entire model. LoRA is an efficient fine-tuning approach within SFT that reduces computational and storage costs by introducing low-rank matrices. [Paper](https://arxiv.org/abs/2106.09685)
 
@@ -215,6 +224,8 @@ Because meta has released a pretrained large language model LLaMA, everyone only
   ![截圖 2025-02-05 下午1.46.06](https://hackmd.io/_uploads/SkTshdeK1g.png)
   > [Image source](https://arxiv.org/abs/2312.10997)
 
+  ![cost](https://konfuzio.com/wp-content/uploads/2023/10/rag-llm-comparison.png)
+  > [Image source](https://konfuzio.com/en/limits-llms-retrieval-augmented-generation/)
 
 ## References
   - [CMU](https://www.phontron.com/class/anlp2024/assets/slides/anlp-10-rag.pdf)
