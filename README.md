@@ -63,8 +63,11 @@ Jhe-Jia Wu: d11948002@ntu.edu.tw
     - Cross-Entropy Loss
 - **Activation function**: Functions applied to the output of each neuron to introduce non-linearity into the network.
     - ReLU (Rectified Linear Unit):
-    - sigmoid
+    - Sigmoid / Logistic
     - LeakyReLu
+    - GELU
+    - Swish
+    - Softmax
 - **Regularization**: Techniques like L1, L2 regularization, or dropout used to prevent overfitting by adding penalties or modifying the network during training.
 - **Neural Network Architecture**: The structure or layout of a neural network, which defines how layers of neurons are connected.
     - Fully Connected (Dense) Layer
@@ -172,14 +175,21 @@ Because meta has released a pretrained large language model LLaMA, everyone only
 
 ## Retrieval-Augmented-Generation-RAG
 ![rag_class3](https://hackmd.io/_uploads/HycaAIdp1x.png)
-1. Splitter: Splits text into smaller chunks for easier processing. [LangChain Document](https://python.langchain.com/docs/concepts/text_splitters/)
-2. Embedding: Converts text into numerical vectors that capture meaning. [LangChain Document](https://python.langchain.com/docs/concepts/embedding_models/)
-3. Storage: Stores and organizes vector data for efficient retrieval. [LangChain Document](https://python.langchain.com/docs/concepts/vectorstores/)
-4. Retriver: Retrieves relevant data or documents based on queries. [LangChain Document](https://python.langchain.com/docs/concepts/retrievers/)
+### Details and Steps of the RAG
+![detail_rag](https://hackmd.io/_uploads/BJfyJcYTJx.png)
 
-- Flow chart image.
+- The framed parts follow the architecture outlined in the code, based on the two papers: [Karpukhin et al.'s DPR](https://arxiv.org/abs/2004.04906) and [Lewis et al.'s RAG](https://arxiv.org/abs/2005.11401), which are also called *stuff*, the one of chain type in `LangChain`.
+- Below storage, `Chroma`, `Qdrant`, and `FAISS` are the three types of vector databases for storage.
+
+- `Stuff` flow chart: the fundamental method of RAG
 ![](https://js.langchain.com/v0.1/assets/images/stuff-818da4c66ee17911bc8861c089316579.jpg)
- > [Image from `LangChain` [Document]](https://js.langchain.com/v0.1/docs/modules/chains/document/stuff/)
+ > Image from `LangChain` [Document](https://js.langchain.com/v0.1/docs/modules/chains/document/stuff/)
+
+#### Four steps
+1. **Splitter**: Splits text into smaller chunks for easier processing. [LangChain Document](https://python.langchain.com/docs/concepts/text_splitters/)
+2. **Embedding**: Converts text into numerical vectors that capture meaning. [LangChain Document](https://python.langchain.com/docs/concepts/embedding_models/)
+3. **Storage**: Stores and organizes vector data for efficient retrieval. [LangChain Document](https://python.langchain.com/docs/concepts/vectorstores/)
+4. **Retriver**: Retrieves relevant data or documents based on queries. [LangChain Document](https://python.langchain.com/docs/concepts/retrievers/)
 
 - **Storage**
   - vector databases
