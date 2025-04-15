@@ -222,6 +222,12 @@ Because meta has released a pretrained large language model LLaMA, everyone only
 | kNN-LM (Khandelwal et al. 2020) | Tokens | Output layer | Every token |
 | FLARE (Jiang et al. 2023) | Text chunks | Input layer | Every n tokens *(adaptive)* |
 
+#### Tug-of-War between an LLM's internal info and external info
+![ChatGPT Image 2025年4月9日 下午12_45_45 (1)](https://hackmd.io/_uploads/Hk0fnumAkx.png)
+> created by ChatGPT
+  
+When external knowledge from document retrieval conflicts with a model's internal knowledge, large language models (LLMs) often adopt incorrect external information, but they are less likely to do so when the retrieved content is clearly unrealistic. Please refer to [Paper](https://arxiv.org/abs/2404.10198) more details.
+
 
 ### Summary: Fine-tuning v.s RAG:
 
