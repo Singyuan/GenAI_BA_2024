@@ -239,4 +239,4 @@ When external knowledge from document retrieval conflicts with a model's interna
 
 ## References
   - [CMU](https://www.phontron.com/class/anlp2024/assets/slides/anlp-10-rag.pdf)
-  - [ACL](https://acl2023-retrieval-lm.github.io/slides/3-architecture.pdf)
+  - [ACL](https://acl2023-retrieval-lm.github.io)
