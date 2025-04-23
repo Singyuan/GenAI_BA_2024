@@ -47,7 +47,8 @@ Retrieval Augmented Generation (RAG) is a language model (LM) that uses an exter
 |<a href="#small-Language-Models">1</a>|3/19|sLMs|<ul><li>Transformer</li><li>BERT</li><li>Tokenization</li></ul>|[Transformer](https://colab.research.google.com/drive/1YUqcXCoP9RAaykSIz3IC2Bz3j6OTSawF?usp=sharing)||
 |<a href="#Large-Language-Models-LLMs">2</a>|3/26|LLMs|<ul><li>Training steps of LLMs</li><li>Evolution of LLMs</li><li>Quantization</li></ul>|<ul><li>[Call by API](https://colab.research.google.com/drive/1wwZp7Y3jZQMawKd523CJCd-u0VFIMGs0?hl=zh-tw#scrollTo=z4I00KtDfDs3)</li><li>[slides](https://docs.google.com/presentation/d/1ATZ-qmNsD6bOUskKpEWiY6EN4Udvn4U6s97jh7qRc3I/edit?slide=id.g2aefc017252_0_465#slide=id.g2aefc017252_0_465)</li><li>[Quantization](https://colab.research.google.com/drive/1bYs4uz6vE0Amx1-4d3wMsFfd_-Ci82LQ?usp=sharing)</li><ul>|4/16|
 |<a href="#Improve-PLMs">3</a>|3/26|Improve PLMs|<ul><li>Introduction to different FT ways</li><li>Comparison to different FT ways</li></ul>|[Fine-tuning](https://colab.research.google.com/drive/1vQbcYXRVrZz_NGuaxr3bxQ9wFDaBfVBC?usp=sharing)||
-  |<a href="#Retrieval-Augmented-Generation-RAG">4</a>|4/2|RAG|<ul><li>How to retrieve</li><li>When to retrieve</li><li>What to retrieve</li><li>How to use retrieve</li></ul>|[RAG](https://colab.research.google.com/drive/12kBCiWkCnfDcOHHrJX0BMx7hhthknvQw?usp=sharing)||
+|<a href="#Retrieval-Augmented-Generation-RAG">4</a>|4/2|RAG|<ul><li>How to retrieve</li><li>When to retrieve</li><li>What to retrieve</li><li>How to use retrieve</li></ul>|[RAG](https://colab.research.google.com/drive/12kBCiWkCnfDcOHHrJX0BMx7hhthknvQw?usp=sharing)||
+|<a href="#Variational-Autoencoder-VAE">5</a>|5/7|VAE|<ul><li>Introduction to VAE</li></ul>|<ul><li>[VAE](https://colab.research.google.com/drive/1VFwG_Q3UYbX9t-kkETXl4R97el_wJilO?usp=sharing)</li></ul>||
 
 ## Contact us
 Sing-Yuan Yeh: d10948003@ntu.edu.tw  
