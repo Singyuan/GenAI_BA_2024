@@ -34,8 +34,8 @@ Retrieval Augmented Generation (RAG) is a language model (LM) that uses an exter
 |10|4/23|Proposal|x|
 |11|4/30|Prof. Yang (NTU)|x|
 |12|5/7|Prof. Yang (NTU)||
-|13|5/14|Prof. Yang (NTU)||
-|14|5/21|Catch up|*|
+|13|5/14|Proposal Distillation (Demo)|x|
+|14|5/21|Prof. Yang (NTU)||
 |15|5/28|Presentation|x|
 
 \* The TA will be in the office. If you have any questions, feel free to come to the office and ask us.
