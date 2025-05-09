@@ -249,3 +249,5 @@ When external knowledge from document retrieval conflicts with a model's interna
 
   ![](assets/mnist_uncond.gif)
 - Conditional PPDM
+
+  ![](assets/mnist_cond.gif)
