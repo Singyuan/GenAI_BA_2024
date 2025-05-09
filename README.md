@@ -49,6 +49,7 @@ Retrieval Augmented Generation (RAG) is a language model (LM) that uses an exter
 |<a href="#Improve-PLMs">3</a>|3/26|Improve PLMs|<ul><li>Introduction to different FT ways</li><li>Comparison to different FT ways</li></ul>|[Fine-tuning](https://colab.research.google.com/drive/1vQbcYXRVrZz_NGuaxr3bxQ9wFDaBfVBC?usp=sharing)||
 |<a href="#Retrieval-Augmented-Generation-RAG">4</a>|4/2|RAG|<ul><li>How to retrieve</li><li>When to retrieve</li><li>What to retrieve</li><li>How to use retrieve</li></ul>|[RAG](https://colab.research.google.com/drive/12kBCiWkCnfDcOHHrJX0BMx7hhthknvQw?usp=sharing)||
 |<a href="#Variational-Autoencoder-VAE">5</a>|5/7|VAE|<ul><li>Introduction to VAE</li><li>Reconstruct digit images</li><li>Generate new digits by sampling from the learned latent space</li><li>Visualize the structure of the 2D latent manifold.</li></ul>|[VAE](https://colab.research.google.com/drive/1VFwG_Q3UYbX9t-kkETXl4R97el_wJilO?usp=sharing)||
+|<a href="#Diffusion-Models">6</a>|5/21|DDPM|TBA|||
 
 ## Contact us
 Sing-Yuan Yeh: d10948003@ntu.edu.tw  
@@ -241,3 +242,10 @@ When external knowledge from document retrieval conflicts with a model's interna
 ## References
   - [CMU](https://www.phontron.com/class/anlp2024/assets/slides/anlp-10-rag.pdf)
   - [ACL](https://acl2023-retrieval-lm.github.io)
+
+---
+## Diffusion Models
+- Unconditional PPDM
+
+  ![](assets/mnist_uncond.gif)
+- Conditional PPDM
